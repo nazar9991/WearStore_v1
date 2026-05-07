@@ -1,0 +1,33 @@
+{
+  "name": "wearstore",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WearStore - Modern Women's Clothing E-commerce Platform",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "dev:api": "pnpm --filter @wearstore/api run dev",
+    "dev:web": "pnpm --filter @wearstore/web run dev",
+    "build": "pnpm -r run build",
+    "build:api": "pnpm --filter @wearstore/api run build",
+    "build:web": "pnpm --filter @wearstore/web run build",
+    "lint": "pnpm -r run lint",
+    "test": "pnpm -r run test",
+    "test:api": "pnpm --filter @wearstore/api run test",
+    "test:web": "pnpm --filter @wearstore/web run test",
+    "test:coverage": "pnpm -r run test:coverage",
+    "test:coverage:api": "pnpm --filter @wearstore/api run test:coverage",
+    "test:coverage:web": "pnpm --filter @wearstore/web run test:coverage",
+    "test:ui": "pnpm -r --parallel run test:ui",
+    "db:generate": "pnpm --filter @wearstore/api run db:generate",
+    "db:migrate": "pnpm --filter @wearstore/api run db:migrate",
+    "db:seed": "pnpm --filter @wearstore/api run db:seed",
+    "db:studio": "pnpm --filter @wearstore/api run db:studio"
+  },
+  "keywords": ["ecommerce", "clothing", "react", "express", "typescript"],
+  "author": "WearStore Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
